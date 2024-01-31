@@ -41,9 +41,9 @@ def Daily_Bill():
                 appliances.append( value)
     def handle_input(input_value,appliances):
         if i == 0:
-            Microwave=800
+            Microwave=8000
             if (appliances[i]>1):
-                Microwave+=(appliances[i]-1)*600/3
+                Microwave+=(appliances[i]-1)*8000/3
         elif i == 1:
             Oven=3000
             if (appliances[i]>1):
@@ -53,15 +53,15 @@ def Daily_Bill():
             if (appliances[i]>1):
                 Dishwasher+=(appliances[i]-1)*1800/3
         elif i == 3:
-            Mixer=500
+            Mixer=1000
             if (appliances[i]>1):
                 Mixer+=(appliances[i]-1)*500/3
         elif i == 4:
-            light=600
+            light=1000
             if (appliances[i]>1):
                 light+=(appliances[i]-1)*600/3
         elif i == 5:
-            washing=900
+            washing=1000
             if (appliances[i]>1):
                 washing+=(appliances[i]-1)*900/3
         elif i == 6:
@@ -81,13 +81,13 @@ def Daily_Bill():
             if (appliances[i]>1):
                 airconditioner+=(appliances[i]-1)*4000/3
         elif i == 10:
-            fan=75
+            fan=1000
             if (appliances[i]>1):
-                fan+=(appliances[i]-1)*75/2                        
+                fan+=(appliances[i]-1)*500/2                        
         elif i == 11:
-            televison=75
+            televison=1000
             if (appliances[i]>1):
-                television+=(appliances[i]-1)*75/2      
+                television+=(appliances[i]-1)*500/2      
     for i in (0,10):
         handle_input(i,appliances)
     Sub_1 = Microwave+Oven+Dishwasher+Mixer
@@ -129,9 +129,9 @@ def monthly_Bill():
                 appliances.append( value)
     def handle_input(input_value,appliances):
         if i == 0:
-            Microwave=800
+            Microwave=8000
             if (appliances[i]>1):
-                Microwave+=(appliances[i]-1)*600/3
+                Microwave+=(appliances[i]-1)*8000/3
         elif i == 1:
             Oven=3000
             if (appliances[i]>1):
@@ -141,7 +141,7 @@ def monthly_Bill():
             if (appliances[i]>1):
                 Dishwasher+=(appliances[i]-1)*1800/3
         elif i == 3:
-            Mixer=500
+            Mixer=1000
             if (appliances[i]>1):
                 Mixer+=(appliances[i]-1)*500/3
         elif i == 4:
@@ -169,13 +169,13 @@ def monthly_Bill():
             if (appliances[i]>1):
                 airconditioner+=(appliances[i]-1)*4000/3
         elif i == 10:
-            fan=75
+            fan=1000
             if (appliances[i]>1):
-                fan+=(appliances[i]-1)*75/2                        
+                fan+=(appliances[i]-1)*500/2                        
         elif i == 11:
-            televison=75
+            televison=1000
             if (appliances[i]>1):
-                television+=(appliances[i]-1)*75/2      
+                television+=(appliances[i]-1)*500/2      
     for i in (0,10):
         handle_input(i,appliances)
     Sub_1 = Microwave+Oven+Dishwasher+Mixer
