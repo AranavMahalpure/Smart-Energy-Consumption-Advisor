@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static',filename='form.css')}}>
+</head>
+<body><div class="background-image"></div>
+    <form method="post" action="/monthly_Bill">
+        <div id="appliance-form">
+          <div class="category">
+            <h2>Sub Metering One</h2>
+            <ul>
+              <li>
+                <label for "appliance1">Microwave:</label>
+                <input type="number"  name="1appliance1" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance2">Oven:</label>
+                <input type="number"  name="1appliance2" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance2">Dishwasher:</label>
+                <input type="number"  name="1appliance3" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance2">Hand Mixer:</label>
+                <input type="number"  name="1appliance4" min="0" value="0">
+              </li>
+              <!-- Add more appliances as needed -->
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Sub Metering Two</h2>
+            <ul>
+              <li>
+                <label for "appliance3">Light:</label>
+                <input type="number"  name="2appliance1" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance4">Washing-machine:</label>
+                <input type="number"  name="2appliance2" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance4">Tumble-drier:</label>
+                <input type="number"  name="2appliance3" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance4">Refrigerator:</label>
+                <input type="number"  name="2appliance4" min="0" value="0">
+              </li>
+              <!-- Add more appliances as needed -->
+            </ul>
+          </div>
+          <div class="category">
+            <h2>Sub Metering Three</h2>
+            <ul>
+              <li>
+                <label for "appliance5">Electricwaterheater:</label>
+                <input type="number"  name="3appliance1" min="0" value="0">
+              </li>
+              <li>
+                <label for "appliance6">Airconditioner:</label>
+                <input type="number"  name="3appliance2" min="0" value="0">
+              </li>
+              <!-- Add more appliances as needed -->
+            </ul>
+          </div><button class="Btn"
+          type="submit">
+            Submit
+          </button>
+        </div>
+         
+      </form>
+      
+</body>
+</html>
